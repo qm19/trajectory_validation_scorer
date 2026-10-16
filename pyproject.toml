@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trajectory-validation-scorer"
+version = "1.0.0"
+description = "Evidence-grounded scoring of validation actions in agent trajectories"
+requires-python = ">=3.10"
+readme = "README.md"
+dependencies = ["tqdm>=4.66,<5", "filelock>=3.13,<4"]
+
+[project.scripts]
+trajectory-validation-scorer = "trajectory_scorer.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["trajectory_scorer*"]
+exclude = ["tests*", "reports*", "new_data*"]
