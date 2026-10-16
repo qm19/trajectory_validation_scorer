@@ -1,0 +1,14 @@
+.env
+__pycache__/
+*.pyc
+.trajectory_score_cache/
+*.errors.jsonl
+outputs/
+data/
+*.egg-info/
+build/
+dist/
+.venv/
+.state/
+.annotation.lock
+tests/artifacts/
